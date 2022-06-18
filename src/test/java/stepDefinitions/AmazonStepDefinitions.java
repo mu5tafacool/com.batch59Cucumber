@@ -72,15 +72,17 @@ public class AmazonStepDefinitions {
         String actualsonuc = amazonPage.aramaSonucElementi.getText();
         Assert.assertTrue(actualsonuc.contains(arananKelime));
     }
+
     @Given("kullanici {string} anasayfasinda") // amazonUrl
     public void kullaniciAnasayfasinda(String istenenUrl) {
 
         Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
 
     }
+
     @And("url'in {string} icerdigini test eder")
     public void urlInIcerdiginiTestEder(String istenenKelime) {
-        String actualUrl=Driver.getDriver().getCurrentUrl();
+        String actualUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(istenenKelime));
     }
 
@@ -100,7 +102,7 @@ public class AmazonStepDefinitions {
     @Given("kullanici {int} sn bekler")
     public void kullanici_sn_bekler(Integer istenenSaniye) {
         try {
-            Thread.sleep(istenenSaniye*1000);
+            Thread.sleep(istenenSaniye * 1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
