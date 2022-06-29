@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class DataTablesPage {
     public DataTablesPage() {
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//span[contains(text(),'New')]")
