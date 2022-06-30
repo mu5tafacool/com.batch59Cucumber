@@ -69,6 +69,7 @@ public class DataTablesStepDefinitions {
     }
 
     Actions actions = new Actions(Driver.getDriver());
+
     @And("tab yapar")
     public void tabYapar() {
         actions.sendKeys(Keys.TAB);
