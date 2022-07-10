@@ -10,7 +10,7 @@ import java.util.List;
 public class GuruPage {
 
     public GuruPage() {
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//*[text()='Accept All']")
@@ -19,7 +19,7 @@ public class GuruPage {
     @FindBy(xpath = "//thead//tr//th")
     public List<WebElement> baslikListesi;
 
-    @FindBy(id="gdpr-consent-notice")
+    @FindBy(id = "gdpr-consent-notice")
     public WebElement cookiesIframe;
 
 }
