@@ -36,6 +36,7 @@ public class HMCStepDefinitions {
     public void sayfaya_giris_yaptigini_kontrol_eder() {
         Assert.assertTrue(hmcPage.hotelManagement.isDisplayed());
     }
+
     @And("gecersiz password girer")
     public void gecersizPasswordGirer() {
         hmcPage.passwordKutusu.sendKeys(ConfigReader.getProperty("HMCWrongPassword"));
