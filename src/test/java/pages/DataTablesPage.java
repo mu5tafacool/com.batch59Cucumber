@@ -1,6 +1,5 @@
 package pages;
 
-import org.junit.runner.manipulation.Ordering;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -31,7 +30,6 @@ public class DataTablesPage {
     public WebElement create;
     @FindBy(xpath = "//input[@type='search']")
     public WebElement search;
-
     @FindBy(xpath = "//td[@class='sorting_1']")
     public WebElement aramaSonucIlkElement;
 }
